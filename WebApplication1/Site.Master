@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<title><asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder></title>
+<link href="~/css/Styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body runat="server">
+<div id="page">
+<div id="header">
+<h1 style="text-align:center"><asp:ContentPlaceHolder ID="heading" runat="server"></asp:ContentPlaceHolder>
+<img src="/Images/logo.png" alt="logo" style="width: 881px; height: 200px" /></div>
+    
+<div id="menu">
+<ul>
+<li><a href="~/default.aspx" runat="server">HOME</a></li>
+<li><a href="~/about.aspx" runat="server">ABOUT</a></li>
+<li><a href="~/contact.aspx" runat="server">CONTACT US</a></li>
+<li><a href="~/Member/index.aspx" runat="server">MEMBERS</a></li>
+</ul>
+</div>
+
+<div id="content">
+<h2><asp:ContentPlaceHolder ID="heading2" runat="server"></asp:ContentPlaceHolder></h2>
+
+<p><asp:ContentPlaceHolder ID="paragraph" runat="server" ></asp:ContentPlaceHolder></p>
+
+</div>
+</div>
+
+<div id="footer">
+    Copyright &copy; The Unicorn Store
+</div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+﻿*{border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    padding: 0;
+    margin: 1 0 0 0;
+}
+
+body {
+    background-image: url('/Images/wallpaper.png');
+    background-attachment: fixed;
+}
+#page{
+	width:900px;
+	margin:auto;
+	min-height:500px;
+}
+
+#logo {
+    background-image: url('/Images/logo.png');
+    vertical-align: middle;
+    height: 177px;
+}
+
+#menu ul{
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+    background-color:pink;
+}
+
+#content {
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+a, a:visited{
+	color:black;
+	}
+
+li {
+    display: inline;
+}
+
+a {
+    display: inline-block;
+    padding: 10px;
+}
+
+a:hover{
+	color:white;
+}
+
+#footer {
+    text-align: center;
+}
+
+
+/*The style below will apply to the element with an
+id of "header" */
+#header {
+    width: 888px;
+    height: 238px;
+    background-color: floralwhite;
+    margin:10px;
+}
+
+form1{
+    background-color:transparent;
+}
+
+.imgcontainer{
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.container{
+    text-align: center;
+}
+
+.category{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: white;
+    margin-top: 20px;
+
+}
