@@ -1,14 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="WebApplication1._default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
-Home: My new website
-
+Unicorn Store
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="heading" runat="server">
-    Home - My new website
+    <asp:Image ID="imgMain" runat="server"  ImageUrl="/Images/logo2.jpg" alt="logo" style="width: 881px; height: 200px" />Unicorn Store
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="heading2" runat="server">
-    PRODUCTS
+    FEATURE ITEMS
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
@@ -17,7 +17,7 @@ Home: My new website
 
 <ul class="items">
     <li>
-        <a href="~/Products.aspx">
+        <a href="Products.aspx">
             <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
             <h4>Unicorn Mug</h4>
             <p>$20.00</p>
@@ -25,7 +25,7 @@ Home: My new website
     </li>
 
     <li>
-        <a href="~/Products.aspx">
+        <a href="Products.aspx">
             <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
             <h4>Unicorn Mug</h4>
             <p>$20.00</p>
@@ -33,7 +33,7 @@ Home: My new website
     </li>
 
         <li>
-        <a href="~/Products.aspx">
+        <a href="Products.aspx">
             <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
             <h4>Unicorn Mug</h4>
             <p>$20.00 &ensp; <asp:Button ID="Button1" runat="server" Text="Add to Cart" />
@@ -42,7 +42,7 @@ Home: My new website
     </li>
 
     <li>
-        <a href="~/Products.axspx">
+        <a href="Products.aspx">
             <img src="/Images/logo2.jpg" style="height: 165px; width: 178px">
             <h4>Unicorn Mug</h4>
             <p>$20.00</p>
@@ -52,7 +52,7 @@ Home: My new website
 
     <ul class="items">
     <li>
-        <a href="~/Products.axspx">
+        <a href="Products.aspx">
             <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
             <h4>Unicorn Mug</h4>
             <p>$20.00</p>
@@ -60,7 +60,7 @@ Home: My new website
     </li>
 
     <li>
-        <a href="~/Products.axspx">
+        <a href="Products.aspx">
             <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
             <h4>Unicorn Mug</h4>
             <p>$20.00</p>
@@ -68,7 +68,7 @@ Home: My new website
     </li>
 
         <li>
-        <a href="~/Products.axspx">
+        <a href="Products.aspx">
             <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
             <h4>Unicorn Mug</h4>
             <p>$20.00</p>
@@ -76,7 +76,7 @@ Home: My new website
     </li>
 
     <li>
-        <a href="~/Products.axspx">
+        <a href="Products.aspx">
             <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
             <h4>Unicorn Mug</h4>
             <p>$20.00</p>

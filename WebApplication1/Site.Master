@@ -11,12 +11,13 @@
 <body runat="server">
 <div id="page">
 <div id="header">
-<h1 style="text-align:center"><asp:ContentPlaceHolder ID="heading" runat="server"></asp:ContentPlaceHolder></h1>
-<img src="/Images/logo.png" alt="logo" style="width: 881px; height: 200px" /></div>
+<h1 style="text-align:center"><asp:ContentPlaceHolder ID="heading" runat="server">
+<asp:Image ID="imgMain" runat="server"  ImageUrl="/Images/logo2.jpg" alt="logo" style="width: 881px; height: 200px" /></asp:ContentPlaceHolder></h1>
+</div>
     
 <div id="menu">
 <ul>
-<li><a href="~/index.aspx" runat="server">HOME</a></li>
+<li><a href="~/default.aspx" runat="server">HOME</a></li>
 <li><a href="~/about.aspx" runat="server">ABOUT</a></li>
 <li><a href="~/Products.aspx" runat="server">PRODUCTS</a></li>
 <li><a href="~/contact.aspx" runat="server">CONTACT US</a></li>
