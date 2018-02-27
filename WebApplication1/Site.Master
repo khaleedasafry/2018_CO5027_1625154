@@ -11,7 +11,7 @@
 <body runat="server">
 <div id="page">
 <div id="header">
-<h1 style="text-align:center"><asp:ContentPlaceHolder ID="heading" runat="server"></asp:ContentPlaceHolder>
+<h1 style="text-align:center"><asp:ContentPlaceHolder ID="heading" runat="server"></asp:ContentPlaceHolder></h1>
 <img src="/Images/logo.png" alt="logo" style="width: 881px; height: 200px" /></div>
     
 <div id="menu">
@@ -25,9 +25,9 @@
 </div>
 
 <div id="content">
-<h2><asp:ContentPlaceHolder ID="heading2" runat="server"></asp:ContentPlaceHolder></h2>
+<h2 style="text-align:center"><asp:ContentPlaceHolder ID="heading2" runat="server"></asp:ContentPlaceHolder></h2>
 
-<p><asp:ContentPlaceHolder ID="paragraph" runat="server" ></asp:ContentPlaceHolder></p>
+<asp:ContentPlaceHolder ID="paragraph" runat="server" ></asp:ContentPlaceHolder>
 
 </div>
 </div>
