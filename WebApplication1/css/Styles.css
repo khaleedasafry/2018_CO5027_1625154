@@ -28,7 +28,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color:pink;
+    background-color: lightcoral
 }
 
 #content {
@@ -49,6 +49,7 @@ li {
 a {
     display: inline-block;
     padding: 10px;
+    color: aliceblue;
 }
 
 a:hover{
