@@ -12,7 +12,7 @@
 <div id="page">
 <div id="header">
 <h1 style="text-align:center"><asp:ContentPlaceHolder ID="heading" runat="server">
-<asp:Image ID="imgMain" runat="server"  ImageUrl="/Images/logo2.jpg" alt="logo" style="width: 881px; height: 200px" /></asp:ContentPlaceHolder></h1>
+<asp:Image ID="imgMain" runat="server"  ImageUrl="/Images/logo2.jpg" alt="logo" style="width: 881px; height: 200px"></asp:Image></asp:ContentPlaceHolder></h1>
 </div>
     
 <div id="menu">
