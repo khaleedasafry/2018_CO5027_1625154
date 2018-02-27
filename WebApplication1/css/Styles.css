@@ -1,4 +1,5 @@
-﻿*{border-style: none;
+﻿* {
+    border-style: none;
     border-color: inherit;
     border-width: 0;
     padding: 0;
@@ -9,10 +10,11 @@ body {
     background-image: url('/Images/wallpaper.png');
     background-attachment: fixed;
 }
-#page{
-	width:900px;
-	margin:auto;
-	min-height:500px;
+
+#page {
+    width: 900px;
+    margin: auto;
+    min-height: 500px;
 }
 
 #logo {
@@ -21,7 +23,7 @@ body {
     height: 177px;
 }
 
-#menu ul{
+#menu ul {
     border: 0px solid #ccc;
     border-width: 0px 0;
     list-style: none;
@@ -38,9 +40,9 @@ body {
     background: rgba(0, 0, 0, 0.3);
 }
 
-a, a:visited{
-	color: aquamarine;
-	}
+a, a:visited {
+    color: aquamarine;
+}
 
 li {
     display: inline;
@@ -52,9 +54,9 @@ a {
     color: salmon;
 }
 
-a:hover{
-	color:white;
-}
+    a:hover {
+        color: white;
+    }
 
 
 /*The style below will apply to the element with an
@@ -63,11 +65,11 @@ id of "header" */
     width: 888px;
     height: 238px;
     background-color: floralwhite;
-    margin:10px;
+    margin: 10px;
 }
 
-form1{
-    background-color:transparent;
+form1 {
+    background-color: transparent;
 }
 
 ul.items li {
@@ -79,4 +81,75 @@ ul.items li {
     margin: auto;
 }
 
+@keyframes slideshow {
+    10% {
+        left: 0;
+    }
 
+    20% {
+        left: 0;
+    }
+
+    30% {
+        left: -100%;
+    }
+
+    40% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    60% {
+        left: -200%;
+    }
+
+    70% {
+        left: -300%;
+    }
+
+    80% {
+        left: -300%;
+    }
+
+    90% {
+        left: -400%;
+    }
+
+    100% {
+        left: -400%
+    }
+}
+
+
+#slider {
+    overflow: hidden;
+    width: 50%;
+    margin: 5px auto;
+    border: 5px solid transparent;
+    border-radius: 10px;
+}
+
+    #slider figure img {
+        width: 20%;
+        float: left;
+    }
+
+    #slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        animation: 20s slideshow infinite
+    }
+
+@media screen and (max-width: 767px) {
+    #slider {
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
