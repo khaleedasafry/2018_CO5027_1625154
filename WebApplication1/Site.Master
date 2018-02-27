@@ -19,9 +19,9 @@
 <div id="menu">
 <ul>
 <li><a href="~/default.aspx" runat="server">HOME</a></li>
-<li><a href="~/about.aspx" runat="server">ABOUT</a></li>
 <li><a href="~/Products.aspx" runat="server">PRODUCTS</a></li>
 <li><a href="~/contact.aspx" runat="server">CONTACT US</a></li>
+<li><a href="~/about.aspx" runat="server">ABOUT</a></li>
 <li><a href="~/Member/index.aspx" runat="server">MEMBERS</a></li>
 </ul>
 </div>

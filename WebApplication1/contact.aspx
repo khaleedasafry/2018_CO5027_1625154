@@ -7,7 +7,7 @@ Contact Page</asp:Content>
     Contact Us</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
 
-    <form id="form1" runat="server" style="text-align: center">
+    <form id="form4" runat="server" style="text-align: center">
         <div>
 <p>
 <font face="Verdana">Name: </font><asp:TextBox ID="TextBox1" runat="server" BackColor="#CCFFFF" Height="22px" Width="163px"></asp:TextBox>
