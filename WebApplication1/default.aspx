@@ -13,26 +13,23 @@ Home: My new website
 
 <asp:Content ID="Content4" ContentPlaceHolderID="paragraph" runat="server">
 
-<p></p>
+    <p></p>
     <div class="container">
     <div class="category">
-        <img src="/Images/wallpaper.png" style="width:100%" />
-        <img src="/Images/wallpaper.png" style="width:100%" />
-        <img src="/Images/wallpaper.png" style="width:100%" />
+        <img src="/Images/mug.jpg" style="width:100%" />
+        <img src="/Images/mug.jpg" style="width:100%" />
     </div>
 
     <div class="category">
-        <img src="/Images/wallpaper.png" style="width:100%" />
-        <img src="/Images/wallpaper.png" style="width:100%" />
-        <img src="/Images/wallpaper.png" style="width:100%" />
+        <img src="/Images/mug.jpg" style="width:100%" />
+        <img src="/Images/mug.jpg" style="width:100%" />
     </div>
 
-        <div class="category">
-        <img src="/Images/wallpaper.png" style="width:100%" />
-        <img src="/Images/wallpaper.png" style="width:100%" />
-        <img src="/Images/wallpaper.png" style="width:100%" />
+            <div class="category">
+        <img src="/Images/mug.jpg" style="width:100%" />
+        <img src="/Images/mug.jpg" style="width:100%" />
     </div>
    </div>
-<p></p>
+
 
 </asp:Content>

@@ -2,11 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
 About: My new website</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="heading" runat="server">
-About page</asp:Content>
+    About page</asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="heading2" runat="server">
-About Us</asp:Content>
+    About Us</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="paragraph" runat="server">
-<p>This page mostly provides information about the entity for which it has been built</p>
+    <p>This page mostly provides information about the entity for which it has been built</p>
 <p>
 Phasellus viverra cursus gravida. Nulla nec arcu et est auctor ultricies vel in mauris. Aenean porta adipiscing libero sit amet ultrices. Donec at arcu at odio semper tempor. Etiam luctus turpis pharetra justo venenatis dignissim. Vestibulum vehicula nibh eu justo mattis posuere. Integer et lacus sem, id aliquam turpis. Curabitur viverra congue laoreet. Suspendisse sed tortor quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ultricies lorem vel nulla dapibus sollicitudin aliquam sit amet dolor. Aenean id interdum turpis. Fusce hendrerit sodales risus sed viverra. Integer et metus non elit sollicitudin vehicula sit amet eget odio. Suspendisse vitae velit at ante aliquet placerat. In aliquet vulputate interdum.
 </p><p>
