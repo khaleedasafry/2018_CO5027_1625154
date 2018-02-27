@@ -8,7 +8,7 @@ Home: My new website
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="heading2" runat="server"><center>
-    PRODUCTS
+    PRODUCTStest
 </center></asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="paragraph" runat="server">
