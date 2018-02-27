@@ -71,6 +71,8 @@
     <Content Include="contact.aspx" />
     <Content Include="css\Styles.css" />
     <Content Include="default.aspx" />
+    <Content Include="Images\addtocart.png" />
+    <Content Include="Images\favicon.ico" />
     <Content Include="Images\light3.gif" />
     <Content Include="Images\lights.jpg" />
     <Content Include="Images\lights3.jpg" />

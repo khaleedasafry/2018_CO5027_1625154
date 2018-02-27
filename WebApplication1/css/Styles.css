@@ -39,7 +39,7 @@ body {
 }
 
 a, a:visited{
-	color:black;
+	color: aquamarine;
 	}
 
 li {
@@ -49,7 +49,7 @@ li {
 a {
     display: inline-block;
     padding: 10px;
-    color: aliceblue;
+    color: salmon;
 }
 
 a:hover{

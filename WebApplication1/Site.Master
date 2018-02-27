@@ -5,6 +5,7 @@
 <html>
 <head runat="server">
 <title><asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder></title>
+<link rel="icon" href="/Images/favicon.ico" type="image/x-icon">
 <link href="~/css/Styles.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -32,8 +33,6 @@
 
 </div>
 </div>
-
-
 </body>
 
 </html>
