@@ -40,12 +40,12 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder heading2;
         
         /// <summary>
-        /// paragraph control.
+        /// maincontent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder paragraph;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder maincontent;
     }
 }

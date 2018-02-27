@@ -8,31 +8,82 @@ Home: My new website
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="heading2" runat="server">
-    PRODUCTStest
+    PRODUCTS
 </asp:Content>
 
-<asp:Content ID="Content4" ContentPlaceHolderID="paragraph" runat="server">
+<asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
 
-    <div class="container">
-    <div class="category">
-        <img src="/Images/mug.jpg" style="width:100%" /><div dec
-        <img src="/Images/mug.jpg" style="width:100%" />
-        <img src="/Images/mug.jpg" style="width:100%" />
-    </div>
+    <form id="form1" runat="server">
 
-    <div class="category">
-        <img src="/Images/mug.jpg" style="width:100%" />
-        <img src="/Images/map.png" style="width:100%" />
-        <img src="/Images/logo2.jpg" style="width:100%" />
-    </div>
+<ul class="items">
+    <li>
+        <a href="~/Products.aspx">
+            <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
+            <h4>Unicorn Mug</h4>
+            <p>$20.00</p>
+        </a>
+    </li>
 
-   <div class="category">
-        <img src="/Images/mug.jpg" style="width:100%" />
-        <img src="/Images/mug.jpg" style="width:100%" />
-        <img src="/Images/mug.jpg" style="width:100%" />
-    </div>
-   </div>
+    <li>
+        <a href="~/Products.aspx">
+            <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
+            <h4>Unicorn Mug</h4>
+            <p>$20.00</p>
+        </a>
+    </li>
 
-    </div>
+        <li>
+        <a href="~/Products.aspx">
+            <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
+            <h4>Unicorn Mug</h4>
+            <p>$20.00 &ensp; <asp:Button ID="Button1" runat="server" Text="Add to Cart" />
+            </p>
+        </a>
+    </li>
+
+    <li>
+        <a href="~/Products.axspx">
+            <img src="/Images/logo2.jpg" style="height: 165px; width: 178px">
+            <h4>Unicorn Mug</h4>
+            <p>$20.00</p>
+        </a>
+    </li>
+</ul>
+
+    <ul class="items">
+    <li>
+        <a href="~/Products.axspx">
+            <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
+            <h4>Unicorn Mug</h4>
+            <p>$20.00</p>
+        </a>
+    </li>
+
+    <li>
+        <a href="~/Products.axspx">
+            <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
+            <h4>Unicorn Mug</h4>
+            <p>$20.00</p>
+        </a>
+    </li>
+
+        <li>
+        <a href="~/Products.axspx">
+            <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
+            <h4>Unicorn Mug</h4>
+            <p>$20.00</p>
+        </a>
+    </li>
+
+    <li>
+        <a href="~/Products.axspx">
+            <img src="/Images/mug.jpg" style="height: 165px; width: 178px">
+            <h4>Unicorn Mug</h4>
+            <p>$20.00</p>
+        </a>
+    </li>
+</ul>
+
+    </form>
 
 </asp:Content>

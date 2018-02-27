@@ -5,7 +5,7 @@ REGISTER</asp:Content>
     register</asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="heading2" runat="server">
     Members page</asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="paragraph" runat="server">
+<asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
     <p>
 Welcome to the members are of the website
 </p>

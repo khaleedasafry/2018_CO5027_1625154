@@ -3,9 +3,9 @@
 The Unicorn Store</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="heading" runat="server">
     The Unicorn Store</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="heading2" runat="server"><center>
-    My Page Content</center></asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="paragraph" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="heading2" runat="server">
+    My Page Content</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
     <p>Here you will find introductory information about us. Most of it is in Latin.</p>
 <p>
 

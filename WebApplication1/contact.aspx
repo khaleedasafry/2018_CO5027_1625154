@@ -3,9 +3,9 @@
 Contact Page</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="heading" runat="server">
     Contact Page</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="heading2" runat="server"><center><font face="Verdana">
-    Contact Us</font></center></asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="paragraph" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="heading2" runat="server">
+    Contact Us</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
 
     <form id="form1" runat="server" style="text-align: center">
         <div>

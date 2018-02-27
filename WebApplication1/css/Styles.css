@@ -69,21 +69,13 @@ form1{
     background-color:transparent;
 }
 
-.imgcontainer{
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
-.container{
-    text-align: center;
-}
-
-.category{
+ul.items li {
+    width: 50px;
     display: inline-block;
-    width: 200px;
-    height: 200px;
-    background: white;
-    margin-top: 20px;
-
+    vertical-align: top;
+    display: inline;
+    padding: 5px;
+    margin: auto;
 }
+
 
