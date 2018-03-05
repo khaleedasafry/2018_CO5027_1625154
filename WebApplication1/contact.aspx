@@ -8,25 +8,48 @@ Contact Page</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
 
     <form id="form4" runat="server" style="text-align: center">
-        <div>
+    <div>
 <p>
-<font face="Verdana">Name: </font><asp:TextBox ID="TextBox1" runat="server" BackColor="#CCFFFF" Height="22px" Width="163px"></asp:TextBox>
-</p> 
-<p>
-<font face="Verdana">Telephone:</font><asp:TextBox ID="TextBox2" runat="server" BackColor="#FFCCCC" Height="22px" Width="163px"></asp:TextBox>
+
+    <asp:Label ID="Subject" runat="server" Text="Subject"></asp:Label>
+
+    <asp:TextBox ID="txtSubject" runat="server" Height="16px" Width="110px"></asp:TextBox>
+
 </p>    
 <p>
-<font face="Verdana">Email Address:</font><asp:TextBox ID="TextBox3" runat="server" BackColor="#CCCCFF" Height="22px" Width="163px"></asp:TextBox>
+    
+    <asp:Label ID="Name" runat="server" Text="Body"></asp:Label>
+    
+    <asp:TextBox ID="txtName" runat="server" BackColor="#CCCCFF" Height="56px" Width="163px" TextMode="MultiLine"></asp:TextBox>
 </p>
             <p>
-                <asp:Button ID="Button1" runat="server" Height="37px" Text="Submit" Width="105px" />
+                <asp:Button ID="BtnSendEmail" runat="server" Height="37px" Text="SEND EMAIL" Width="225px" OnClick="BtnSendEmail_Click" />            
 </p>
-<p>
-<font face="Verdana"> Our Location</font></p>
-        <p style="height: 215px">
-    &nbsp;<img src="/Images/map.png" alt="map" style="width: 600px; height: 165px">
-</p>
-</div>
- 
-</form>
+            <p>
+                <asp:Literal ID="litResult" runat="server"></asp:Literal>
+</p>    
+
+
+            <br />
+            <asp:Label ID="location" runat="server" Text="Location"></asp:Label>
+            <br />
+      </div>
+        </form>
+
+</asp:Content>
+
+<asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
+    <div id="map">  </div>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD9HfBWdRw8bSP9p8c-4xjFJm29YAxI2M&callback=initMap"
+    async defer></script>
+
 </asp:Content>

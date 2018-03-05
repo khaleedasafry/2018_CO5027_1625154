@@ -7,8 +7,10 @@
 }
 
 body {
-    background-image: url('/Images/wallpaper.png');
+    background-image: url('/Images/wallpaper1.png');
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #page {
@@ -18,14 +20,14 @@ body {
 }
 
 #logo {
-    background-image: url('/Images/logo.png');
+    background-image: url('/Images/wallpaper3.jpg');
     vertical-align: middle;
     height: 177px;
 }
 
 #menu ul {
     border: 0px solid #ccc;
-    border-width: 0px 0;
+    border-width: 100px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -58,6 +60,17 @@ a {
         color: white;
     }
 
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 /*The style below will apply to the element with an
 id of "header" */
@@ -158,7 +171,7 @@ input[type=text], input[type=password] {
     border-style: none;
     border-color: inherit;
     border-width: medium;
-padding: 15px;
+    padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
     background: #f1f1f1;

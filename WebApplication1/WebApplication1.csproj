@@ -94,6 +94,7 @@
     <Content Include="Images\purse4.jpg" />
     <Content Include="Images\wallpaper.png" />
     <Content Include="Images\wallpaper1.png" />
+    <Content Include="Images\wallpaper3.jpg" />
     <Content Include="index.aspx" />
     <Content Include="Member\index.aspx" />
     <Content Include="Products.aspx" />
