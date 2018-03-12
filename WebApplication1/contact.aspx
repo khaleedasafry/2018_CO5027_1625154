@@ -9,11 +9,23 @@ Contact Page</asp:Content>
 
     <form id="form4" runat="server" style="text-align: center">
     <div>
+
+        <p>
+
+
+            <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+
+
+            </p>
 <p>
 
     <asp:Label ID="Subject" runat="server" Text="Subject"></asp:Label>
 
     <asp:TextBox ID="txtSubject" runat="server" Height="16px" Width="110px"></asp:TextBox>
+
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
 
 </p>    
 <p>
@@ -21,6 +33,7 @@ Contact Page</asp:Content>
     <asp:Label ID="Name" runat="server" Text="Body"></asp:Label>
     
     <asp:TextBox ID="txtName" runat="server" BackColor="#CCCCFF" Height="56px" Width="163px" TextMode="MultiLine"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
 </p>
             <p>
                 <asp:Button ID="BtnSendEmail" runat="server" Height="37px" Text="SEND EMAIL" Width="225px" OnClick="BtnSendEmail_Click" />            
