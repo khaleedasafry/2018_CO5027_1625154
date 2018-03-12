@@ -12,10 +12,18 @@ Contact Page</asp:Content>
 
         <p>
 
+        </p>
+        <asp:ValidationSummary ID="Valsumcontact" runat="server" ForeColor="#990000" Height="36px" DisplayMode="List" />
+        <p>
 
-            <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+            <asp:Label ID="Email" runat="server" Text="Email"></asp:Label>
+
+            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+
+            <asp:RequiredFieldValidator ID="reqEmail" runat="server" ErrorMessage="Email must be filled" ForeColor="#CC0000" ControlToValidate="txtEmail" Display="None"></asp:RequiredFieldValidator>
+
+
+            <asp:RegularExpressionValidator ID="valEmail" runat="server" ErrorMessage="Invalid email address" ForeColor="#990000" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txtEmail" Display="None"></asp:RegularExpressionValidator>
 
 
             </p>
@@ -25,7 +33,7 @@ Contact Page</asp:Content>
 
     <asp:TextBox ID="txtSubject" runat="server" Height="16px" Width="110px"></asp:TextBox>
 
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Subject must be filled" ControlToValidate="txtSubject" ForeColor="#CC0000" Display="None"></asp:RequiredFieldValidator>
 
 </p>    
 <p>
@@ -33,7 +41,7 @@ Contact Page</asp:Content>
     <asp:Label ID="Name" runat="server" Text="Body"></asp:Label>
     
     <asp:TextBox ID="txtName" runat="server" BackColor="#CCCCFF" Height="56px" Width="163px" TextMode="MultiLine"></asp:TextBox>
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Body cannot be empty" ControlToValidate="txtName" ForeColor="#CC0000" Display="None"></asp:RequiredFieldValidator>
 </p>
             <p>
                 <asp:Button ID="BtnSendEmail" runat="server" Height="37px" Text="SEND EMAIL" Width="225px" OnClick="BtnSendEmail_Click" />            
