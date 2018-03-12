@@ -7,21 +7,21 @@ Register</asp:Content>
     Registration Form</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
     <form id="form4" runat="server" style="text-align: center">
-
+        <p>
         <asp:Label ID="Label1" runat="server" Text="Username"></asp:Label>
         <asp:TextBox ID="txtRegEmail" runat="server"></asp:TextBox>
-        <br />
-
+        </p>
+        <p>
         <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
         <asp:TextBox ID="txtRegPassword" runat="server"></asp:TextBox>
-        <br />
-
-        <asp:Button ID="btnReg" runat="server" Text="Register" />
-        <br />
-
+        </p>
+        <p>
+        <asp:Button ID="btnReg" runat="server" Text="Register" OnClick="btnReg_Click" />
+        </p>
+        <p>
         <asp:Literal ID="litRegError" runat="server"></asp:Literal>
-        <br />
-        
+        </p>
+    </form>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
 </asp:Content>
