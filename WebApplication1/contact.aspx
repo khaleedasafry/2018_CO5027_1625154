@@ -8,7 +8,6 @@ Contact Page</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
 
     <form id="form4" runat="server" style="text-align: center">
-    <div>
 
         <p>
 
@@ -48,19 +47,17 @@ Contact Page</asp:Content>
 </p>
             <p>
                 <asp:Literal ID="litResult" runat="server"></asp:Literal>
-</p>    
-
-
-            <br />
+ 
+ </p>
+        <br />
             <asp:Label ID="location" runat="server" Text="Location"></asp:Label>
-            <br />
-      </div>
+
         </form>
 
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
-    <div id="map">  </div>
+    <div id="map">
     <script>
         var map;
         function initMap() {
@@ -72,5 +69,5 @@ Contact Page</asp:Content>
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD9HfBWdRw8bSP9p8c-4xjFJm29YAxI2M&callback=initMap"
     async defer></script>
-
+    </div>
 </asp:Content>

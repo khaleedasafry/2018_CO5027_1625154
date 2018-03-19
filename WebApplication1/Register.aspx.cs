@@ -30,9 +30,10 @@ namespace WebApplication1
             };
 
             IdentityResult result = manager.Create(user, txtRegPassword.Text);
+
             if (result.Succeeded)
             {
-                //todo: log them in
+                litRegError.Text = "Registration Successful";
             }
             else
             {
