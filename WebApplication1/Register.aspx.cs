@@ -20,9 +20,13 @@ namespace WebApplication1
         protected void btnReg_Click(object sender, EventArgs e)
         {
             var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            var roleStore = new RoleStore<IdentityRole>(identityDbContext);
+            var roleManager = new RoleManager<IdentityRole>(roleStore);
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
 
+            IdentityRole adminRole = new IdentityRole("admin");
+            roleManager.Create(adminRole);
             var user = new IdentityUser()
             {
                 UserName = txtRegEmail.Text,
@@ -33,6 +37,8 @@ namespace WebApplication1
 
             if (result.Succeeded)
             {
+                manager.AddToRole(user.Id, "Admin");
+                manager.Update(user);
                 litRegError.Text = "Registration Successful";
             }
             else
