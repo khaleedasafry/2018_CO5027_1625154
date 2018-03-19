@@ -133,6 +133,7 @@
     <Content Include="Images\wallpaper1.png" />
     <Content Include="Images\wallpaper3.jpg" />
     <Content Include="index.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Member\index.aspx" />
     <Content Include="Products.aspx" />
     <Content Include="Register.aspx" />
@@ -188,6 +189,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Member\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
