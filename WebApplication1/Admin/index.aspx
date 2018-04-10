@@ -7,18 +7,11 @@ Admin Page</asp:Content>
     Welcome to Admin Page</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
 
-
-
-
-
-
-
-
-
-
-
-
-
+<ul>
+<li><a href="~/Admin/adminadd.aspx" runat="server">Add Product</a></li>
+<li><a href="~/Admin/adminedit.aspx" runat="server">Edit Product</a></li>
+<li><a href="~/Admin/adminlist.aspx" runat="server">List Product</a></li>
+</ul>
 
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">

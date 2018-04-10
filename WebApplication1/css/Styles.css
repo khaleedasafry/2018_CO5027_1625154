@@ -64,6 +64,7 @@ a {
        * element that contains the map. */
 #map {
     height: 50%;
+
 }
 /* Optional: Makes the sample page fill the window. */
 html, body {

@@ -7,42 +7,18 @@ Admin List Page</asp:Content>
     List of Products</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <form id="form1" runat="server">
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource">
             <Columns>
                 <asp:BoundField DataField="Prod_Desc" HeaderText="Prod_Desc" SortExpression="Prod_Desc" />
                 <asp:BoundField DataField="Prod_Name" HeaderText="Prod_Name" SortExpression="Prod_Name" />
+                <asp:HyperLinkField HeaderText="Prod_Image" NavigateUrl="adminuploadimages.aspx?Prod_Id={0}" Text="Upload Image" />
+                <asp:ButtonField ButtonType="Button" CommandName="Edit" HeaderText="Edit" ShowHeader="True" Text="Edit" />
+                <asp:ButtonField ButtonType="Button" CommandName="Delete" HeaderText="Delete" ShowHeader="True" Text="Delete" />
             </Columns>
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1625154_co5027_asgaConnectionString %>" SelectCommand="SELECT [Prod_Desc], [Prod_Name] FROM [tblProd]"></asp:SqlDataSource>
     </form>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 </asp:Content>
-<asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
-</asp:Content>
+

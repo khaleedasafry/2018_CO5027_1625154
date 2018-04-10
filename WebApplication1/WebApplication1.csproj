@@ -102,9 +102,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\adminuploadimages.aspx" />
+    <Content Include="Admin\Web.config" />
     <None Include="packages.config" />
     <Content Include="about.aspx" />
     <Content Include="Admin\adminadd.aspx" />
+    <Content Include="Admin\adminedit.aspx" />
     <Content Include="Admin\adminlist.aspx" />
     <Content Include="Admin\index.aspx" />
     <Content Include="contact.aspx" />
@@ -168,12 +171,26 @@
     <Compile Include="Admin\adminadd.aspx.designer.cs">
       <DependentUpon>adminadd.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\adminedit.aspx.cs">
+      <DependentUpon>adminedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\adminedit.aspx.designer.cs">
+      <DependentUpon>adminedit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\adminlist.aspx.cs">
       <DependentUpon>adminlist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\adminlist.aspx.designer.cs">
       <DependentUpon>adminlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminuploadimages.aspx.cs">
+      <DependentUpon>adminuploadimages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\adminuploadimages.aspx.designer.cs">
+      <DependentUpon>adminuploadimages.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -261,6 +278,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Productimage\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

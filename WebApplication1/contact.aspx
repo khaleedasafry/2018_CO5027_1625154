@@ -62,12 +62,16 @@ Contact Page</asp:Content>
         var map;
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: -34.397, lng: 150.644 },
-                zoom: 8
+                center: { lat: 4.8950323, lng: 114.89897010000004 },
+                zoom: 15,
+            });
+            var marker = new google.maps.Marker({
+                position: map,
+                map: map,
             });
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD9HfBWdRw8bSP9p8c-4xjFJm29YAxI2M&callback=initMap"
-    async defer></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD9HfBWdRw8bSP9p8c-4xjFJm29YAxI2M&callback=initMap">
+    </script>
     </div>
 </asp:Content>
