@@ -7,7 +7,7 @@ Admin Edit Page</asp:Content>
     Edit Product Page</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
     <form id="form1" runat="server">
-        <asp:FormView ID="FormView1" runat="server" AllowPaging="True" DataKeyNames="Prod_Id" DataSourceID="SqlDataSource">
+        <asp:FormView ID="FormView1" runat="server" DataSourceID="SqlDataSource" AllowPaging="True" DataKeyNames="Prod_Id">
             <EditItemTemplate>
                 Prod_Id:
                 <asp:Label ID="Prod_IdLabel1" runat="server" Text='<%# Eval("Prod_Id") %>' />
@@ -49,7 +49,7 @@ Admin Edit Page</asp:Content>
                 &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
             </ItemTemplate>
         </asp:FormView>
-        <asp:SqlDataSource ID="SqlDataSource" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:db_1625154_co5027_asgaConnectionString2 %>" DeleteCommand="DELETE FROM [tblProd] WHERE [Prod_Id] = @original_Prod_Id AND (([Prod_Name] = @original_Prod_Name) OR ([Prod_Name] IS NULL AND @original_Prod_Name IS NULL)) AND (([Prod_Desc] = @original_Prod_Desc) OR ([Prod_Desc] IS NULL AND @original_Prod_Desc IS NULL))" InsertCommand="INSERT INTO [tblProd] ([Prod_Id], [Prod_Name], [Prod_Desc]) VALUES (@Prod_Id, @Prod_Name, @Prod_Desc)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [tblProd] WHERE ([Prod_Id] = @Prod_Id)" UpdateCommand="UPDATE [tblProd] SET [Prod_Name] = @Prod_Name, [Prod_Desc] = @Prod_Desc WHERE [Prod_Id] = @original_Prod_Id AND (([Prod_Name] = @original_Prod_Name) OR ([Prod_Name] IS NULL AND @original_Prod_Name IS NULL)) AND (([Prod_Desc] = @original_Prod_Desc) OR ([Prod_Desc] IS NULL AND @original_Prod_Desc IS NULL))">
+        <asp:SqlDataSource ID="SqlDataSource" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:db_1625154_co5027_asgaConnectionString %>" DeleteCommand="DELETE FROM [tblProduct] WHERE [Prod_Id] = @original_Prod_Id AND (([Prod_Name] = @original_Prod_Name) OR ([Prod_Name] IS NULL AND @original_Prod_Name IS NULL)) AND (([Prod_Desc] = @original_Prod_Desc) OR ([Prod_Desc] IS NULL AND @original_Prod_Desc IS NULL))" InsertCommand="INSERT INTO [tblProduct] ([Prod_Id], [Prod_Name], [Prod_Desc]) VALUES (@Prod_Id, @Prod_Name, @Prod_Desc)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [tblProduct] WHERE ([Prod_Id] = @Prod_Id)" UpdateCommand="UPDATE [tblProduct] SET [Prod_Name] = @Prod_Name, [Prod_Desc] = @Prod_Desc WHERE [Prod_Id] = @original_Prod_Id AND (([Prod_Name] = @original_Prod_Name) OR ([Prod_Name] IS NULL AND @original_Prod_Name IS NULL)) AND (([Prod_Desc] = @original_Prod_Desc) OR ([Prod_Desc] IS NULL AND @original_Prod_Desc IS NULL))">
             <DeleteParameters>
                 <asp:Parameter Name="original_Prod_Id" Type="Int32" />
                 <asp:Parameter Name="original_Prod_Name" Type="String" />

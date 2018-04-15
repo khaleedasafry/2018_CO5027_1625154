@@ -25,7 +25,7 @@ namespace WebApplication1
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
 
-            IdentityRole adminRole = new IdentityRole("RegisteredUser");
+            IdentityRole adminRole = new IdentityRole("Admin");
             roleManager.Create(adminRole);
             var user = new IdentityUser()
             {
@@ -37,7 +37,7 @@ namespace WebApplication1
 
             if (result.Succeeded)
             {
-                manager.AddToRole(user.Id, "RegisteredUser");
+                manager.AddToRole(user.Id, "Admin");
                 manager.Update(user);
                 litRegError.Text = "Registration Successful";
             }

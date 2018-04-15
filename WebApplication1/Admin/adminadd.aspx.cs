@@ -13,5 +13,10 @@ namespace WebApplication1.Admin
         {
 
         }
+
+        protected void FormView1_PageIndexChanging(object sender, FormViewPageEventArgs e)
+        {
+
+        }
     }
 }
