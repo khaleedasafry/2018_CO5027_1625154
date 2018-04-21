@@ -4,7 +4,7 @@ Login</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="heading" runat="server">
     <asp:Image ID="imgMain" runat="server"  ImageUrl="/Images/logo2.jpg" alt="logo" style="width: 881px; height: 200px" />Unicorn Store</asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="heading2" runat="server">
-Login Page</asp:Content>
+    Login Page</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
 
     <form id="form1" runat="server" style="text-align: center">
@@ -14,7 +14,7 @@ Login Page</asp:Content>
         </p>
         <p>
             <asp:Label ID="Label2" runat="server" Text="Password:"></asp:Label>
-            <asp:TextBox ID="txtLoginPassword" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtLoginPassword" runat="server" TextMode="Password"></asp:TextBox>
         </p>
         <p>
             <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />

@@ -17,5 +17,4 @@ Admin Upload Page</asp:Content>
         <asp:Image ID="currentimage" runat="server" Height="245px" Width="333px" />
     </form>
 </asp:Content>
-<asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
-</asp:Content>
+

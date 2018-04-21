@@ -6,107 +6,71 @@ Products</asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="heading2" runat="server">
     Product Description</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
-    
-    <form id="form2" runat="server">   
-    <ul class="items">
-    <li>
-        <a href="Products.aspx">
-            <img src="/Images/purse.jpg" alt="item1" style="height: 165px; width: 178px"/>
-            <h4>Unicorn Purse</h4>
-            <p>$20.00<asp:Button ID="Button12" runat="server" Text="Add to Cart" BackColor="White" ForeColor="#CC99FF" Width="75px" ></asp:Button></p>
-        </a>
-    </li>
 
-    <li>
-        <a href="Products.aspx">
-            <img src="/Images/purse2.jpg" alt="item2" style="height: 165px; width: 178px">
-            <h4>Unicorn Purse</h4>
-            <p>$20.00<asp:Button ID="Button11" runat="server" Text="Add to Cart" BackColor="White" ForeColor="#CC99FF" Width="75px" ></asp:Button></p>
-        </a>
-    </li>
 
-        <li>
-        <a href="Products.aspx">
-            <img src="/Images/purse3.jpg" alt="item3" style="height: 165px; width: 178px">
-            <h4>Unicorn Purse</h4>
-            <p>$20.00<asp:Button ID="Button1" runat="server" Text="Add to Cart" BackColor="White" ForeColor="#CC99FF" Width="75px" ></asp:Button></p>      
-        </a>
-    </li>
+    <form id="form1" runat="server">
+        <asp:FormView ID="FormView1" runat="server" DataKeyNames="Prod_Id" DataSourceID="SqlDataSource">
+            <EditItemTemplate>
+                Prod_Id:
+                <asp:Label ID="Prod_IdLabel1" runat="server" Text='<%# Eval("Prod_Id") %>' />
+                <br />
+                Prod_Name:
+                <asp:TextBox ID="Prod_NameTextBox" runat="server" Text='<%# Bind("Prod_Name") %>' />
+                <br />
+                Prod_Desc:
+                <asp:TextBox ID="Prod_DescTextBox" runat="server" Text='<%# Bind("Prod_Desc") %>' />
+                <br />
+                Quantity:
+                <asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Bind("Quantity") %>' />
+                <br />
+                Price:
+                <asp:TextBox ID="PriceTextBox" runat="server" Text='<%# Bind("Price") %>' />
+                <br />
+                <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+            </EditItemTemplate>
+            <InsertItemTemplate>
+                Prod_Id:
+                <asp:TextBox ID="Prod_IdTextBox" runat="server" Text='<%# Bind("Prod_Id") %>' />
+                <br />
+                Prod_Name:
+                <asp:TextBox ID="Prod_NameTextBox" runat="server" Text='<%# Bind("Prod_Name") %>' />
+                <br />
+                Prod_Desc:
+                <asp:TextBox ID="Prod_DescTextBox" runat="server" Text='<%# Bind("Prod_Desc") %>' />
+                <br />
+                Quantity:
+                <asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Bind("Quantity") %>' />
+                <br />
+                Price:
+                <asp:TextBox ID="PriceTextBox" runat="server" Text='<%# Bind("Price") %>' />
+                <br />
+                <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+            </InsertItemTemplate>
+            <ItemTemplate>
+                Prod_Id:
+                <asp:Label ID="Prod_IdLabel" runat="server" Text='<%# Eval("Prod_Id") %>' />
+                <br />
+                Prod_Name:
+                <asp:Label ID="Prod_NameLabel" runat="server" Text='<%# Bind("Prod_Name") %>' />
+                <br />
+                Prod_Desc:
+                <asp:Label ID="Prod_DescLabel" runat="server" Text='<%# Bind("Prod_Desc") %>' />
+                <br />
+                Quantity:
+                <asp:Label ID="QuantityLabel" runat="server" Text='<%# Bind("Quantity") %>' />
+                <br />
+                Price:
+                <asp:Label ID="PriceLabel" runat="server" Text='<%# Bind("Price") %>' />
+                <br />
 
-    <li>
-        <a href="Products.aspx">
-            <img src="/Images/purse4.jpg" alt="item4" style="height: 165px; width: 178px">
-            <h4>Unicorn Purse</h4>
-            <p>$20.00<asp:Button ID="Button2" runat="server" Text="Add to Cart" BackColor="White" ForeColor="#CC99FF" Width="75px" ></asp:Button></p>
-        </a>
-    </li>
-</ul>
+            </ItemTemplate>
+        </asp:FormView>
+        <asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1625154_co5027_asgaConnectionString %>" SelectCommand="SELECT * FROM [tblProduct]">
+        </asp:SqlDataSource>
+        <asp:Button ID="btnPurchase" runat="server" Text="Purchase" OnClick="btnPurchase_Click" />
+    </form>
 
-    <ul class="items">
-    <li>
-        <a href="Products.aspx">
-            <img src="/Images/mug.jpg" alt="item5" style="height: 165px; width: 178px">
-            <h4>Unicorn Mug</h4>
-            <p>$20.00<asp:Button ID="Button3" runat="server" Text="Add to Cart" BackColor="White" ForeColor="#CC99FF" Width="75px" ></asp:Button></p>
-        </a>
-    </li>
 
-    <li>
-        <a href="Products.aspx">
-            <img src="/Images/mug2.jpg" alt="item6" style="height: 165px; width: 178px">
-            <h4>Unicorn Mug</h4>
-            <p>$20.00<asp:Button ID="Button4" runat="server" Text="Add to Cart" BackColor="White" ForeColor="#CC99FF" Width="75px" ></asp:Button></p>
-        </a>
-    </li>
-
-        <li>
-        <a href="Products.aspx">
-            <img src="/Images/mug3.png" alt="item7" style="height: 165px; width: 200px">
-            <h4>Unicorn Mug</h4>
-            <p>$20.00<asp:Button ID="Button5" runat="server" Text="Add to Cart" BackColor="White" ForeColor="#CC99FF" Width="75px" ></asp:Button></p>
-        </a>
-    </li>
-
-    <li>
-        <a href="Products.aspx">
-            <img src="/Images/mug4.png" alt="item8" style="height: 165px; width: 197px">
-            <h4>Unicorn Mug</h4>
-            <p>$20.00<asp:Button ID="Button6" runat="server" Text="Add to Cart" BackColor="White" ForeColor="#CC99FF" Width="75px" ></asp:Button></p>
-        </a>
-    </li>
-
-            <ul class="items">
-    <li>
-        <a href="Products.aspx">
-            <img src="/Images/lights.jpg" alt="item5" style="height: 165px; width: 178px">
-            <h4>Unicorn Lights</h4>
-            <p>$20.00<asp:Button ID="Button7" runat="server" Text="Add to Cart" BackColor="White" ForeColor="#CC99FF" Width="75px" ></asp:Button></p>
-        </a>
-    </li>
-
-    <li>
-        <a href="Products.aspx">
-            <img src="/Images/lights3.jpg" alt="item6" style="height: 165px; width: 178px">
-            <h4>Unicorn Lights</h4>
-            <p>$20.00<asp:Button ID="Button8" runat="server" Text="Add to Cart" BackColor="White" ForeColor="#CC99FF" Width="75px" ></asp:Button></p>
-        </a>
-    </li>
-
-        <li>
-        <a href="Products.aspx">
-            <img src="/Images/light3.gif" alt="item7" style="height: 165px; width: 200px">
-            <h4>Unicorn Lights</h4>
-            <p>$20.00<asp:Button ID="Button9" runat="server" Text="Add to Cart" BackColor="White" ForeColor="#CC99FF" Width="75px" ></asp:Button></p>
-        </a>
-    </li>
-
-    <li>
-        <a href="Products.aspx">
-            <img src="/Images/lights4.jpg" alt="item8" style="height: 165px; width: 197px">
-            <h4>Unicorn Lights</h4>
-            <p>$20.00<asp:Button ID="Button10" runat="server" Text="Add to Cart" BackColor="White" ForeColor="#CC99FF" Width="75px" ></asp:Button></p>
-        </a>
-    </li>
-</ul>
-        </form>
 </asp:Content>
