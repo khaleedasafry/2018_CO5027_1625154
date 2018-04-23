@@ -16,24 +16,20 @@ Unicorn Store
     <form id="form1" runat="server">
 
         <asp:Repeater ID="ProdList" runat="server" DataSourceID="SqlDataSource">
-        <HeaderTemplate><ul></HeaderTemplate>
+        <HeaderTemplate><table><tr></HeaderTemplate>
 
         <ItemTemplate>
-
-            <ul class ="repeater">
-            <li>
-                <img src="Images/<%#Eval("Prod_Id")%>.jpg"/><br />
-                <a href="<%#Eval("Prod_Id","Products.aspx?Id={0}")%>"><%#Eval("Prod_Name") %>
-                </a>
-                <p><b>Name</b><%#Eval("Prod_Name")%></p>
+           
+            <td>
+                <p><img src="/Productimage/<%#Eval("Prod_Id")%>.jpg" alt="<%#Eval("Prod_Id")%>" width="200" height="200"/></p>
+                <p><b>Name</b><a href="<%#Eval("Prod_Id","Products.aspx?Id={0}")%>"><%#Eval("Prod_Name") %></a></p>
                 <p><b>Price</b><%#Eval("Price")%></p>
 
-        
-            </li>
-            </ul>
+            </td>
+            
         </ItemTemplate>
         
-        <FooterTemplate></ul></FooterTemplate>
+        <FooterTemplate></table></tr></FooterTemplate>
         </asp:Repeater>
         <asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1625154_co5027_asgaConnectionString %>" SelectCommand="SELECT * FROM [tblProduct]"></asp:SqlDataSource>
     

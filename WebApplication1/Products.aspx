@@ -8,8 +8,11 @@ Products</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
 
 
-    <form id="form1" runat="server">
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="Prod_Id" DataSourceID="SqlDataSource">
+    <form id="form1" runat="server" style="height: 195px">
+        
+
+        <asp:FormView ID="FormView1" runat="server" DataKeyNames="Prod_Id" DataSourceID="SqlDataSource">         
+
             <EditItemTemplate>
                 Prod_Id:
                 <asp:Label ID="Prod_IdLabel1" runat="server" Text='<%# Eval("Prod_Id") %>' />
@@ -19,9 +22,6 @@ Products</asp:Content>
                 <br />
                 Prod_Desc:
                 <asp:TextBox ID="Prod_DescTextBox" runat="server" Text='<%# Bind("Prod_Desc") %>' />
-                <br />
-                Quantity:
-                <asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Bind("Quantity") %>' />
                 <br />
                 Price:
                 <asp:TextBox ID="PriceTextBox" runat="server" Text='<%# Bind("Price") %>' />
@@ -39,9 +39,6 @@ Products</asp:Content>
                 Prod_Desc:
                 <asp:TextBox ID="Prod_DescTextBox" runat="server" Text='<%# Bind("Prod_Desc") %>' />
                 <br />
-                Quantity:
-                <asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Bind("Quantity") %>' />
-                <br />
                 Price:
                 <asp:TextBox ID="PriceTextBox" runat="server" Text='<%# Bind("Price") %>' />
                 <br />
@@ -58,18 +55,24 @@ Products</asp:Content>
                 Prod_Desc:
                 <asp:Label ID="Prod_DescLabel" runat="server" Text='<%# Bind("Prod_Desc") %>' />
                 <br />
-                Quantity:
-                <asp:Label ID="QuantityLabel" runat="server" Text='<%# Bind("Quantity") %>' />
-                <br />
                 Price:
                 <asp:Label ID="PriceLabel" runat="server" Text='<%# Bind("Price") %>' />
                 <br />
 
             </ItemTemplate>
+
         </asp:FormView>
-        <asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1625154_co5027_asgaConnectionString %>" SelectCommand="SELECT * FROM [tblProduct]">
+        <asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1625154_co5027_asgaConnectionString %>" SelectCommand="SELECT [Prod_Id], [Prod_Name], [Prod_Desc], [Price] FROM [tblProduct]">
         </asp:SqlDataSource>
-        <asp:Button ID="btnPurchase" runat="server" Text="Purchase" OnClick="btnPurchase_Click" />
+
+       <p><asp:Label ID="Label1" runat="server" Text="Quantity"></asp:Label> <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="42px">
+           <asp:ListItem>1</asp:ListItem>
+           <asp:ListItem>2</asp:ListItem>
+           <asp:ListItem>3</asp:ListItem>
+           <asp:ListItem>4</asp:ListItem>
+           <asp:ListItem>5</asp:ListItem>
+           </asp:DropDownList></p>
+        <p><asp:Button ID="btnPurchase" runat="server" Text="Purchase" OnClick="btnPurchase_Click" Height="32px" Width="83px" /></p>
     </form>
 
 

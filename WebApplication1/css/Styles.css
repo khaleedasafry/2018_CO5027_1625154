@@ -64,7 +64,8 @@ a {
        * element that contains the map. */
 #map {
     height: 50%;
-
+    width: 73%;
+    margin: 0 auto 0 auto;
 }
 /* Optional: Makes the sample page fill the window. */
 html, body {

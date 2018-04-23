@@ -14,14 +14,14 @@ namespace WebApplication1.Admin
             string Prod_Id = Request.QueryString["Prod_Id"];
             string filename = Prod_Id + ".jpg";
 
-            currentimage.ImageUrl = "~/Images/" + filename;
+            currentimage.ImageUrl = "~/Productimage/" + filename;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
             string Prod_Id = Request.QueryString["Prod_Id"];
             string filename = Prod_Id + ".jpg"; 
-            string savelocation = Server.MapPath("~/Images/" + filename);
+            string savelocation = Server.MapPath("~/Productimage/" + filename);
 
             FileUploadImage.SaveAs(savelocation);
         }
