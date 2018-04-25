@@ -10,9 +10,7 @@ Products</asp:Content>
 
     <form id="form1" runat="server" style="height: 195px">
         
-
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="Prod_Id" DataSourceID="SqlDataSource">         
-
+        <asp:FormView ID="FormView1" runat="server" DataKeyNames="Prod_Id" DataSourceID="SqlDataSource">
             <EditItemTemplate>
                 Prod_Id:
                 <asp:Label ID="Prod_IdLabel1" runat="server" Text='<%# Eval("Prod_Id") %>' />
@@ -62,10 +60,10 @@ Products</asp:Content>
             </ItemTemplate>
 
         </asp:FormView>
-        <asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1625154_co5027_asgaConnectionString %>" SelectCommand="SELECT [Prod_Id], [Prod_Name], [Prod_Desc], [Price] FROM [tblProduct]">
-        </asp:SqlDataSource>
-
-       <p><asp:Label ID="Label1" runat="server" Text="Quantity"></asp:Label> <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="42px">
+        
+        <asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1625154_co5027_asgaConnectionString %>" SelectCommand="SELECT [Prod_Id], [Prod_Name], [Prod_Desc], [Price] FROM [tblProduct]"></asp:SqlDataSource>
+        
+       <p><asp:Label ID="Label1" runat="server" Text="Quantity"></asp:Label> <asp:DropDownList ID="quantitylist" runat="server" Height="22px" Width="42px">
            <asp:ListItem>1</asp:ListItem>
            <asp:ListItem>2</asp:ListItem>
            <asp:ListItem>3</asp:ListItem>

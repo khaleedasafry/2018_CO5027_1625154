@@ -16,7 +16,11 @@ namespace WebApplication1
 
         protected void btnPurchase_Click(object sender, EventArgs e)
         {
-
+            decimal postagePackagingCost = 3.95m;
+            decimal productPrice = 10.00m;
+            int quantityofProduct = int.Parse(quantitylist.SelectedValue);
+            decimal subTotal = (quantityofProduct * productPrice);
+            decimal total = subTotal + postagePackagingCost;
         }
     }
 }

@@ -18,7 +18,7 @@ Admin List Page</asp:Content>
                 <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
                 <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
                 <asp:HyperLinkField DataNavigateUrlFields="Prod_Id" DataNavigateUrlFormatString="adminedit.aspx?Prod_Id={0}" HeaderText="Edit" Text="Edit" />
-                <asp:CommandField ShowDeleteButton="True" />
+                <asp:CommandField ShowDeleteButton="True" HeaderText="Delete" />
                 <asp:HyperLinkField DataNavigateUrlFields="Prod_Id" DataNavigateUrlFormatString="adminuploadimages.aspx?Prod_Id={0}" HeaderText="Upload Images" Text="Upload image" />
             </Columns>
         </asp:GridView>

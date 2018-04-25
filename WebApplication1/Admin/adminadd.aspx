@@ -96,5 +96,7 @@ Admin Add Page</asp:Content>
             </UpdateParameters>
         </asp:SqlDataSource>
 </form>
+
+    <a href="~/Admin/index.aspx" runat="server">Back</a>
 </asp:Content>
 

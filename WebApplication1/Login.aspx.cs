@@ -40,9 +40,21 @@ namespace WebApplication1
              user, DefaultAuthenticationTypes.ApplicationCookie);
         authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
             
-            if (Request.QueryString["ReturnUrl"] != null)
+            if (Request.QueryString["~/Register.aspx"] != null)
             {
-                Response.Redirect(Request.QueryString["ReturnUrl"]);
+                Response.Redirect(Request.QueryString["~/Register.aspx"]);
+            }
+
+            else
+            {
+                string UserRoles = usermanager.GetRoles(user.Id).FirstOrDefault();
+                if (UserRoles.Equals("Admin"))
+                {
+                    if(UserRoles.Equals("Admin"))
+                    {
+                        Response.Redirect("~/admin/index.aspx");
+                    }
+                }
             }
         }
     }
