@@ -7,7 +7,7 @@ Contact Page</asp:Content>
     Contact Us</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
 
-    <form id="form4" runat="server" style="text-align: center">
+    <form id="form4" runat="server" style="text-align: center; height: 458px;">
 
         <p>
 

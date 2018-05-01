@@ -107,15 +107,23 @@
   <ItemGroup>
     <Content Include="Admin\adminuploadimages.aspx" />
     <Content Include="Admin\Web.config" />
+    <Content Include="Cart\Web.config" />
     <None Include="packages.config" />
     <Content Include="Admin\adminadd.aspx" />
     <Content Include="Admin\adminedit.aspx" />
     <Content Include="Admin\adminlist.aspx" />
     <Content Include="Admin\index.aspx" />
+    <Content Include="Cart\shoppingcart.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="css\Styles.css" />
+    <Content Include="Images\BUY-NOW-BUTTON.png" />
+    <Content Include="Images\buynow1.png" />
+    <Content Include="Images\download %281%29.png" />
+    <Content Include="Images\download %282%29.png" />
+    <Content Include="Images\login-button.png" />
+    <Content Include="Images\Send-Email-Button.png" />
+    <Content Include="Images\shop-now-button.jpg" />
     <Content Include="index.aspx" />
-    <Content Include="Images\addtocart.png" />
     <Content Include="Images\favicon.ico" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\logo2.jpg" />
@@ -175,6 +183,13 @@
     </Compile>
     <Compile Include="Admin\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart\shoppingcart.aspx.cs">
+      <DependentUpon>shoppingcart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart\shoppingcart.aspx.designer.cs">
+      <DependentUpon>shoppingcart.aspx</DependentUpon>
     </Compile>
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>

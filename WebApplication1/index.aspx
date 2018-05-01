@@ -12,29 +12,29 @@ Unicorn Store
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
-    <link href="~/css/Styles.css" rel="stylesheet" type="text/css">
+        <link href="~/css/Styles.css" rel="stylesheet" type="text/css">
     <style type="text/css">
 
-        .repeater ul li {
-            height: 500px;
-            margin-top: 40px;
-        }
+       .repeater ul li {
+    height: 500px;
+    margin-top: 40px;
+}
 
-        .repeater li {
-            display: inline-block;
-            float: left;
-            width: 24%;
-        }
+.repeater li {
+    display: inline-block;
+    float: left;
+    width: 24%;
+}
 
-        .repeater ul li a {
-            text-decoration:none;
-            color: white;
-            font-size: 50px;
-        }
+.repeater ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
 
-        .repeater ul li a p{
-            text-align: center;
-        }
+    .repeater ul li a p {
+        text-align: center;
+    }
 
     </style>
 
@@ -58,8 +58,10 @@ Unicorn Store
         </ItemTemplate>
         
         <FooterTemplate></ul></FooterTemplate>
+
         </asp:Repeater>
-        <asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1625154_co5027_asgaConnectionString %>" SelectCommand="SELECT * FROM [tblProduct]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1625154_co5027_asgaConnectionString %>" SelectCommand="SELECT Prod_Id, Prod_Name, Prod_Desc, Quantity, Price FROM tblProduct WHERE (Quantity &gt; 0)">
+        </asp:SqlDataSource>
     
     </form>
 
