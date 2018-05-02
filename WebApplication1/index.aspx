@@ -48,11 +48,10 @@ Unicorn Store
             <ul class="repeater">
            
             <li>
-                <p><asp:Image ID="Img" runat="server" width="200" height="200" ImageUrl='<%#"~/Productimage/" + Eval("prod_Id")+ ".jpg"%>'/></p>
+                <p><asp:Image ID="Img" runat="server" width="200" height="200" ImageUrl='<%#"~/Productimage/" + Eval("prod_Id")+ ".jpg"%>' AlternateText='<%#Eval("Prod_Name")%>' ToolTip='<%#Eval("Prod_Name") %>'/></p>
                 <p><b>Name</b><a href="<%#Eval("Prod_Id","Products.aspx?Id={0}")%>"><%#Eval("Prod_Name") %></a></p>
                 <p><b>Available Qty</b><%#Eval("Quantity")%></p>
                 <p><b>Price</b><%#Eval("Price")%></p>
-
             </li>
             
             </ul>

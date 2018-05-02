@@ -107,19 +107,19 @@
   <ItemGroup>
     <Content Include="Admin\adminuploadimages.aspx" />
     <Content Include="Admin\Web.config" />
-    <Content Include="Cart\Web.config" />
     <None Include="packages.config" />
     <Content Include="Admin\adminadd.aspx" />
     <Content Include="Admin\adminedit.aspx" />
     <Content Include="Admin\adminlist.aspx" />
     <Content Include="Admin\index.aspx" />
-    <Content Include="Cart\shoppingcart.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="css\Styles.css" />
     <Content Include="Images\BUY-NOW-BUTTON.png" />
     <Content Include="Images\buynow1.png" />
+    <Content Include="Images\cart-icon.png" />
     <Content Include="Images\download %281%29.png" />
     <Content Include="Images\download %282%29.png" />
+    <Content Include="Images\finance-money-shop-shopping-store-cart-bag-ecommerce-business-331731b0897f4dfa-512x512.png" />
     <Content Include="Images\login-button.png" />
     <Content Include="Images\Send-Email-Button.png" />
     <Content Include="Images\shop-now-button.jpg" />
@@ -135,6 +135,7 @@
     <Content Include="Register.aspx" />
     <Content Include="Site.Master" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="User\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -144,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="User\shoppingcart.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -183,13 +185,6 @@
     </Compile>
     <Compile Include="Admin\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Cart\shoppingcart.aspx.cs">
-      <DependentUpon>shoppingcart.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Cart\shoppingcart.aspx.designer.cs">
-      <DependentUpon>shoppingcart.aspx</DependentUpon>
     </Compile>
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
@@ -252,6 +247,13 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="User\shoppingcart.aspx.cs">
+      <DependentUpon>shoppingcart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\shoppingcart.aspx.designer.cs">
+      <DependentUpon>shoppingcart.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

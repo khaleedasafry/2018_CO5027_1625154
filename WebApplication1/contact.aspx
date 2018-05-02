@@ -45,9 +45,7 @@ Contact Page</asp:Content>
             <p>
                 <asp:Button ID="BtnSendEmail" runat="server" Height="37px" Text="SEND EMAIL" Width="225px" OnClick="BtnSendEmail_Click" />            
 </p>
-        <p>
-            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Images/download (1).png" Height="40px" Width="138px" />
-        </p>
+
             <p>
                 <asp:Literal ID="litResult" runat="server"></asp:Literal>
  
@@ -62,14 +60,14 @@ Contact Page</asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
     <div id="map">
     <script>
-        var map;
+        var uluru;
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
                 center: { lat: 4.8950323, lng: 114.89897010000004 },
                 zoom: 15,
             });
             var marker = new google.maps.Marker({
-                position: map,
+                position: uluru,
                 map: map,
             });
         }

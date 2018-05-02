@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1.Cart {
+namespace WebApplication1.User {
     
     
     public partial class shoppingcart {

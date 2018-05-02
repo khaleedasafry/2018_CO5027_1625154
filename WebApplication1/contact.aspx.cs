@@ -23,7 +23,7 @@ namespace WebApplication1
 
             //create mail client and message with to and from address, and set message subject and body
             SmtpClient smtpClient = new SmtpClient();
-            MailMessage msg = new MailMessage("khaleedasafry@gmail.com", "khaleedasafry@gmail.com");
+            MailMessage msg = new MailMessage("onlyschoolpurposes@gmail.com", "onlyschoolpurposes@gmail.com");
                 msg.Subject = txtSubject.Text;
                  msg.Body = txtName.Text;
 
@@ -33,9 +33,9 @@ namespace WebApplication1
             smtpClient.EnableSsl = true;
 
             //create credentials - e.g. username and password for the account
-            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("khaleedasafry@gmail.com", "alet123194");
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("onlyschoolpurposes@gmail.com", "lcb12345");
             smtpClient.Credentials = credentials;
-            msg = new MailMessage("khaleedasafry@gmail.com", "khaleedasafry@gmail.com");
+            msg = new MailMessage("onlyschoolpurposes@gmail.com", "onlyschoolpurposes@gmail.com");
 
             try
             {
