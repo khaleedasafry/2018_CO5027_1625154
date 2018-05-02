@@ -6,12 +6,7 @@
     margin: 1 32px 0 0;
 }
 
-body {
-    background-image: url('/Images/wallpaper1.png');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 #page {
     width: 900px;
@@ -26,7 +21,7 @@ body {
 }
 
 #menu ul {
-    border: 0px solid #ccc;
+    border: 0 solid #ccc;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -35,7 +30,7 @@ body {
 }
 
 #content {
-    margin: 0px;
+    margin: 0;
     padding-left: 10px;
     padding-right: 10px;
     background: rgba(0, 0, 0, 0.3);
@@ -86,7 +81,7 @@ ul.items li {
     width: 50px;
     display: inline-block;
     vertical-align: top;
-    display: inline;
+
     padding: 5px;
     margin: auto;
 }
@@ -96,7 +91,7 @@ input[type=text], input[type=password] {
     border-color: inherit;
     border-width: medium;
     padding: 10px;
-    margin: 10px 0 0px 0;
+    margin: 10px 0 0 0;
     display: inline-block;
     background: #f1f1f1;
 }

@@ -4,9 +4,18 @@
 
 <html>
 <head runat="server">
+
 <title><asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder></title>
 <link rel="icon" href="/Images/favicon.ico" type="image/x-icon">
 <link href="~/css/Styles.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+        body {
+    background-image: url(Images/wallpaper1.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    </style>
 
 </head>
 
@@ -15,7 +24,7 @@
 <div id="page">
 <div id="header">
 <h1 style="text-align:center"><asp:ContentPlaceHolder ID="heading" runat="server">
-<asp:Image ID="imgMain" runat="server"  ImageUrl="/Images/logo2.jpg" alt="logo" style="width: 881px; height: 200px"></asp:Image></asp:ContentPlaceHolder></h1>
+<asp:Image ID="imgMain" runat="server"  ImageUrl="~/Images/logo2.jpg" style="width: 881px; height: 200px"></asp:Image></asp:ContentPlaceHolder></h1>
 </div>
     
 <div id="menu">

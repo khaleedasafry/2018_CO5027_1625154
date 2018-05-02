@@ -4,7 +4,7 @@ Unicorn Store
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="heading" runat="server">
-    <asp:Image ID="imgMain" runat="server"  ImageUrl="/Images/logo2.jpg" alt="logo" style="width: 881px; height: 200px"></asp:Image>Unicorn Store
+    <asp:Image ID="imgMain" runat="server"  ImageUrl="~/Images/logo2.jpg" style="width: 881px; height: 200px"></asp:Image>Unicorn Store
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="heading2" runat="server">
@@ -48,8 +48,9 @@ Unicorn Store
             <ul class="repeater">
            
             <li>
-                <p><img src="/Productimage/<%#Eval("Prod_Id")%>.jpg" alt="<%#Eval("Prod_Name")%>" title="<%#Eval("Prod_Name")%>"width="200" height="200"/></p>
+                <p><asp:Image ID="Img" runat="server" width="200" height="200" ImageUrl='<%#"~/Productimage/" + Eval("prod_Id")+ ".jpg"%>'/></p>
                 <p><b>Name</b><a href="<%#Eval("Prod_Id","Products.aspx?Id={0}")%>"><%#Eval("Prod_Name") %></a></p>
+                <p><b>Available Qty</b><%#Eval("Quantity")%></p>
                 <p><b>Price</b><%#Eval("Price")%></p>
 
             </li>

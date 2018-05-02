@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
 Contact Page</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="heading" runat="server">
-    <asp:Image ID="imgMain" runat="server"  ImageUrl="/Images/logo2.jpg" alt="logo" style="width: 881px; height: 200px" />Unicorn Store</asp:Content>
+    <asp:Image ID="imgMain" runat="server"  ImageUrl="~/Images/logo2.jpg" style="width: 881px; height: 200px" />Unicorn Store</asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="heading2" runat="server">
     Contact Us</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
@@ -45,6 +45,9 @@ Contact Page</asp:Content>
             <p>
                 <asp:Button ID="BtnSendEmail" runat="server" Height="37px" Text="SEND EMAIL" Width="225px" OnClick="BtnSendEmail_Click" />            
 </p>
+        <p>
+            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Images/download (1).png" Height="40px" Width="138px" />
+        </p>
             <p>
                 <asp:Literal ID="litResult" runat="server"></asp:Literal>
  
