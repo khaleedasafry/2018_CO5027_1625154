@@ -18,57 +18,80 @@ namespace WebApplication1
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
             decimal postagePackagingCost = 3.95m;
-            decimal Price = 10.00m;
-            int Quantity = int.Parse(quantitylist.SelectedValue);
-            decimal subTotal = (Quantity * Price);
+            decimal productPrice = 10.00m;
+            int quantityofProduct = int.Parse(quantitylist.SelectedValue);
+            decimal subTotal = (quantityofProduct * productPrice);
             decimal total = subTotal + postagePackagingCost;
 
-            var config = ConfigManager.Instance.GetProperties();
-            var accessToken = new OAuthTokenCredential(config).GetAccessToken();
-            var apiContext = new APIContext(accessToken);
+            //var configure = ConfigManager.Instance.GetProperties();
+            //var accessToken = new OAuthTokenCredential(configure).GetAccessToken();
+            //var apiContext = new APIContext(accessToken);
 
-            var productItem = new Item();
-            productItem.name = "Product 1";
-            productItem.currency = "BND";
-            productItem.price = Price.ToString();
-            productItem.sku = "PRO1";
-            productItem.quantity = Quantity.ToString();
+            var clientId = "AaNdaYy8fyPV-Q1NzpeufP83oJZv1P66HoFHW_MZO9W31hfKeJE_Qg7HaIUKaf63FYqAydcUT0mBSVwH";
+            var clientSecret = "EPLAh_yWYpsNXyS56XrBTrzU5lMYS0d-NzWz8FiAhRfCyxi7bEuCemURXcAiP9fscBlZwhLEZq91FIUt";
+            var sdkConfig = new Dictionary<string, string> {
+            { "mode", "sandbox" },
+            { "clientId", clientId },
+            { "clientSecret", clientSecret }
 
-            var transactionDetails = new Details();
-            transactionDetails.tax = "0";
-            transactionDetails.shipping = postagePackagingCost.ToString();
-            transactionDetails.subtotal = subTotal.ToString("0.00");
-
-            var transactionAmount = new Amount();
-            transactionAmount.currency = "BND";
-            transactionAmount.total = total.ToString("0.00");
-            transactionAmount.details = transactionDetails;
-
-            var transaction = new Transaction();
-            transaction.description = "Prod_desc";
-            transaction.invoice_number = Guid.NewGuid().ToString();
-            transaction.amount = transactionAmount;
-            transaction.item_list = new ItemList
-            {
-                items = new List<Item> { productItem }
             };
 
-            var payer = new Payer();
-            payer.payment_method = "paypal";
+            var accessToken = new OAuthTokenCredential(clientId, clientSecret, sdkConfig).GetAccessToken();
+            var apiContext = new APIContext(accessToken);
+            apiContext.Config = sdkConfig;
 
-            var redirectUrls = new RedirectUrls();
-            redirectUrls.cancel_url = "http://" + HttpContext.Current.Request.Url.Authority + "/Cancel.aspx";
-            redirectUrls.return_url = "http://" + HttpContext.Current.Request.Url.Authority + "/CompletePurchase.aspx";
+            var Item = new Item();
+            Item.name = "Product 1";
+            Item.currency = "USD";
+            Item.price = productPrice.ToString();
+            Item.sku = "Product 1";
+            Item.quantity = quantityofProduct.ToString();
+
+            var details = new Details();
+            details.tax = "0";
+            details.shipping = postagePackagingCost.ToString();
+            details.subtotal = subTotal.ToString("0.00");
+
+            var amount = new Amount();
+            amount.currency = "AUD";
+            amount.total = total.ToString("0.00");
+            amount.details = details;
+
+            var transaction = new Transaction();
+            transaction.description = "Your order of the items";
+            transaction.invoice_number = Guid.NewGuid().ToString(); // ID of a record storing the order
+            transaction.amount = amount;
+            transaction.item_list = new ItemList
+            {
+                items = new List<Item> { Item }
+            };
+
+            var client = new Payer();
+            client.payment_method = "paypal";
+
+            var URL = new RedirectUrls();
+            URL.cancel_url = "http://" + HttpContext.Current.Request.Url.Authority + "/product.aspx";
+
+            URL.return_url = "http://" + HttpContext.Current.Request.Url.Authority + "/CompletePurchase.aspx"; ;
 
             var payment = Payment.Create(apiContext, new Payment
             {
                 intent = "sale",
-                payer = payer,
+                payer = client,
                 transactions = new List<Transaction> { transaction },
-                redirect_urls = redirectUrls
+                redirect_urls = URL
             });
 
-            Session["paymentId"] = payment.id;
+            Session["PaymentID"] = payment.id;
+
+            foreach (var link in payment.links)
+            {
+                if (link.rel.ToLower().Trim().Equals("approval_url"))
+                    // redirect user if appropiate link is found
+                    Response.Redirect("https://www.paypal.com/myaccount/money/cards/new/manual");
+            }
         }
-    }
+
+    }      
+
 }

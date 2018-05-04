@@ -115,27 +115,27 @@
     <Content Include="contact.aspx" />
     <Content Include="css\Styles.css" />
     <Content Include="Images\BUY-NOW-BUTTON.png" />
-    <Content Include="Images\buynow1.png" />
-    <Content Include="Images\cart-icon.png" />
-    <Content Include="Images\download %281%29.png" />
-    <Content Include="Images\download %282%29.png" />
-    <Content Include="Images\finance-money-shop-shopping-store-cart-bag-ecommerce-business-331731b0897f4dfa-512x512.png" />
-    <Content Include="Images\login-button.png" />
-    <Content Include="Images\Send-Email-Button.png" />
-    <Content Include="Images\shop-now-button.jpg" />
     <Content Include="index.aspx" />
     <Content Include="Images\favicon.ico" />
-    <Content Include="Images\logo.png" />
     <Content Include="Images\logo2.jpg" />
     <Content Include="Images\wallpaper1.png" />
     <Content Include="Login.aspx" />
-    <Content Include="Member\Cart.aspx" />
-    <Content Include="Member\index.aspx" />
+    <Content Include="Productimage\1001.jpg" />
+    <Content Include="Productimage\1002.jpg" />
+    <Content Include="Productimage\1003.jpg" />
+    <Content Include="Productimage\1004.jpg" />
+    <Content Include="Productimage\1005.jpg" />
+    <Content Include="Productimage\1006.jpg" />
+    <Content Include="Productimage\1007.jpg" />
+    <Content Include="Productimage\1008.jpg" />
+    <Content Include="Productimage\1009.jpg" />
+    <Content Include="Productimage\1010.jpg" />
+    <Content Include="Productimage\1011.jpg" />
+    <Content Include="Productimage\1012.jpg" />
     <Content Include="Products.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Site.Master" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="User\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -145,7 +145,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="User\shoppingcart.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -210,20 +209,6 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Member\Cart.aspx.cs">
-      <DependentUpon>Cart.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Member\Cart.aspx.designer.cs">
-      <DependentUpon>Cart.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Member\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Member\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -247,18 +232,9 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="User\shoppingcart.aspx.cs">
-      <DependentUpon>shoppingcart.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="User\shoppingcart.aspx.designer.cs">
-      <DependentUpon>shoppingcart.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Productimage\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

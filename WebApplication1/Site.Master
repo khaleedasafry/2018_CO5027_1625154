@@ -15,6 +15,21 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+        .column{
+   float: left;
+   width: 33%;
+   margin: auto;
+   text-align: center;
+}
+
+.row:after{
+    content:"";
+    display: table;
+    clear:both;
+    text-align:center;
+  
+}
     </style>
 
 </head>
@@ -34,9 +49,6 @@
 <li><a href="~/contact.aspx" runat="server">CONTACT US</a></li>
 <li><a href="~/Register.aspx" runat="server">REGISTER</a></li>
 <li><a href="~/Login.aspx" runat="server">LOGIN</a></li>
-<li><a href="~/Admin/index.aspx" runat="server">ADMIN</a></li>
-<li><a href="~/User/shoppingcart.aspx" runat="server"><asp:Image ID="Image1" runat="server" ImageUrl="~/Images/cart-icon.png" Height="30px"/></a></li>
-
 </ul>
 </div>
 
@@ -48,6 +60,30 @@
 </div>
 </div>
     <asp:ContentPlaceHolder ID="GoogleMap" runat="server" ></asp:ContentPlaceHolder>
+    
+    <div class="row">
+        <div class="column">
+            <h3>FOR MORE INFORMATION</h3>
+            <p>Our store address: Annajat Complex, Lot 71077, Kg, Bandar Seri Begawan </p>
+            <p>Email: onlyschoolpurposes@gmail.com</p>
+        </div> 
+
+        <div class="column">
+            <h3>ABOUT US</h3>
+            <p>We offer unique unicorn stuff with affordable prices. Unicorn store which sells unicorn related products such as mug, purse and lamps. </p>
+        </div> 
+
+        <div class="column">
+            <h3>&copy; Unicorn Store - 1625154</h3>
+        
+        <p><a href="https://validator.w3.org/check?uri=referer"> Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"> CSS Validator</a>     
+        <a href="https://achecker.ca/checker/?uri-referer">Web Accessibility Checker</a>
+        <a href="/Admin/index.aspx">ADMIN</a>
+            </p>    
+        </div>
+         
+    </div>
 </body>
 
 </html>

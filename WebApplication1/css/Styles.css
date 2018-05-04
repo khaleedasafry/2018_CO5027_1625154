@@ -3,10 +3,8 @@
     border-color: inherit;
     border-width: 0;
     padding: 0;
-    margin: 1 32px 0 70;
+    margin: 1px 32px 0 70;
 }
-
-
 
 #page {
     width: 900px;
@@ -57,6 +55,7 @@ a {
     width: 73%;
     margin: 0 auto 0 auto;
 }
+
 /* Optional: Makes the sample page fill the window. */
 html, body {
     height: 100%;
@@ -77,11 +76,10 @@ form1 {
     background-color: transparent;
 }
 
-ul.items li {
+.items ul li {
     width: 50px;
     display: inline-block;
     vertical-align: top;
-
     padding: 5px;
     margin: auto;
 }
@@ -132,9 +130,5 @@ button {
     content: "";
     clear: both;
     display: table;
-}
-
-footer {
-    text-align: center;
 }
 

@@ -7,7 +7,7 @@ Contact Page</asp:Content>
     Contact Us</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
 
-    <form id="form4" runat="server" style="text-align: center; height: 458px;">
+    <form id="form4" runat="server" style="text-align: center; height: 345px;">
 
         <p>
 
@@ -51,28 +51,32 @@ Contact Page</asp:Content>
  
  </p>
         <br />
+        <p><asp:Label ID="Label1" runat="server" Text="Address :"></asp:Label> Annajat Complex, Lot 71077, Kg, Bandar Seri Begawan</p>
             <asp:Label ID="location" runat="server" Text="Location"></asp:Label>
+        
 
-        </form>
+    </form>
 
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
-    <div id="map">
+    
+    <div id="map"></div>
     <script>
-        var uluru;
         function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 4.8950323, lng: 114.89897010000004 },
-                zoom: 15,
+            var uluru = { lat: 4.895032, lng: 114.898970 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 19,
+                center: uluru
             });
             var marker = new google.maps.Marker({
                 position: uluru,
-                map: map,
+                map: map
             });
         }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD9HfBWdRw8bSP9p8c-4xjFJm29YAxI2M&callback=initMap">
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD9HfBWdRw8bSP9p8c-4xjFJm29YAxI2M&callback=initMap">
     </script>
-    </div>
+
 </asp:Content>

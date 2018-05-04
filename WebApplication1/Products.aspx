@@ -7,7 +7,6 @@ Products</asp:Content>
     Product Description</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="maincontent" runat="server">
 
-
     <form id="form1" runat="server" style="height: 500px">
 
         
@@ -46,7 +45,7 @@ Products</asp:Content>
                 &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </InsertItemTemplate>
             <ItemTemplate>
-                <asp:Image ID="Img" runat="server"  height="300" width="300" ImageUrl='<%#"~/Productimage/" + Eval("prod_Id")+ ".jpg"%>'/>
+                <asp:Image ID="Img" runat="server"  height="300" width="300" ImageUrl='<%#"~/Productimage/" + Eval("prod_Id")+ ".jpg"%>' AlternateText='<%#Eval("Prod_Name")%>' ToolTip='<%#Eval("Prod_Name") %>'/>
                 <br />
                 Prod_Id:
                 <asp:Label ID="Prod_IdLabel" runat="server" Text='<%# Eval("Prod_Id") %>' />
@@ -79,7 +78,7 @@ Products</asp:Content>
         <p>
             <asp:ImageButton ID="shopnowbtn" runat="server" Height="39px" ImageUrl="~/Images/BUY-NOW-BUTTON.png" OnClick="ImageButton1_Click" Width="110px" />
         </p>
+   
     </form>
-
 
 </asp:Content>

@@ -9,7 +9,7 @@ Login</asp:Content>
 
     <form id="form1" runat="server" style="text-align: center">
         <p>
-            <asp:Label ID="Label1" runat="server" Text="Email:"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="Username:"></asp:Label>
             <asp:TextBox ID="txtLoginEmail" runat="server"></asp:TextBox>
         </p>
         <p>

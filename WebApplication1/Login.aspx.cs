@@ -52,7 +52,7 @@ namespace WebApplication1
                 {
                     if(UserRoles.Equals("Admin"))
                     {
-                        Response.Redirect("~/admin/index.aspx");
+                        Response.Redirect("/Admin/index.aspx");
                     }
                 }
             }
