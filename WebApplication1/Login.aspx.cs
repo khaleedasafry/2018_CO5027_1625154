@@ -27,6 +27,7 @@ namespace WebApplication1
             if (user != null)
             {
                 LogUserIn(userManager, user);
+                
             }
             else
             {
@@ -52,7 +53,7 @@ namespace WebApplication1
                 {
                     if(UserRoles.Equals("Admin"))
                     {
-                        Response.Redirect("/Admin/index.aspx");
+                        Response.Redirect("~/Admin/index.aspx");
                     }
                 }
             }

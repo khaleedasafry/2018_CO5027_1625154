@@ -50,8 +50,7 @@ Admin List Page</asp:Content>
             </UpdateParameters>
         </asp:SqlDataSource>
     </form>
-
-
+    <a href="~/Admin/index.aspx" runat="server">BACK</a>
 
 </asp:Content>
 

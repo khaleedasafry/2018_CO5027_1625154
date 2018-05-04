@@ -76,7 +76,7 @@ Products</asp:Content>
            <asp:ListItem>5</asp:ListItem>
            </asp:DropDownList></p>
         <p>
-            <asp:ImageButton ID="shopnowbtn" runat="server" Height="39px" ImageUrl="~/Images/BUY-NOW-BUTTON.png" OnClick="ImageButton1_Click" Width="110px" />
+           <asp:ImageButton ID="shopnowbtn" runat="server" Height="39px" ImageUrl="~/Images/BUY-NOW-BUTTON.png" OnClick="ImageButton1_Click" Width="110px" />
         </p>
    
     </form>
